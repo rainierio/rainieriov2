@@ -10,7 +10,6 @@ class BlogPostRequest extends FormRequest
     {
         return [
             'user_id' => ['required', 'exists:users'],
-            'user_id' => ['required', 'exists:users'],
             'title' => ['required'],
             'content' => ['required'],
             'published_date' => ['nullable', 'date'],
